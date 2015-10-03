@@ -37,3 +37,6 @@ var config = {
 
 var synth = new Monosynth(audioCtx, config);
 ```
+
+### demo
+[tiles: a musical, multiplayer web toy](http://okaybenji.github.io/tiles-client/)
