@@ -1,5 +1,5 @@
 /*!
- *  submono - a Web Audio subtractive monophonic synthesizer
+ *  submono - a Web Audio subtractive, monophonic synthesizer
  *  (c) 2015 Benji Kay
  *  MIT License
  */
@@ -32,15 +32,14 @@ var Monosynth = function(audioCtx, config) {
   synth.decay         = config.decay        || 0.0; //in seconds
   synth.sustain       = config.sustain      || 1.0; //out of 1
   synth.release       = config.release      || 0.8; //in seconds
-  synth.stereoWidth   = config.stereoWidth  || 0.5; //out of 1
   
   //low-pass filter cutoff defaults
   synth.cutoff          = synth.filter.frequency;
-  synth.cutoff.value    = config.cutoff.value     || 7500; //in hertz
   synth.cutoff.maxValue = config.cutoff.maxValue  || 7500; //in hertz
   synth.cutoff.attack   = config.cutoff.attack    || 0.1; //in seconds
   synth.cutoff.decay    = config.cutoff.decay     || 2.5; //in seconds
   synth.cutoff.sustain  = config.cutoff.sustain   || 0.2; //out of 1
+  synth.cutoff.value    = config.cutoff.sustain * config.cutoff.maxValue;
   
   //create and connect oscillator and stereo panner
   synth.osc = audioCtx.createOscillator();
