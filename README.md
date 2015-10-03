@@ -13,7 +13,7 @@ var synth = new Monosynth(audioCtx);
 ### change the volume, attack duration, frequency, waveform...
 ```
 synth.maxGain = 0.5;        // out of 1
-synth.attack = 1;           // in seconds
+synth.attack = 1.0;         // in seconds
 synth.pitch(440);           // in Hz
 synth.waveform('sawtooth'); // or sine, triangle, square
 ```
@@ -27,8 +27,6 @@ var config = {
   decay: 0.0,           // in seconds
   sustain: 1.0,         // out of 1
   release: 0.8,         // in seconds
-  stereoWidth: 0.5,     // out of 1
-  numVoices: 5,         // unlimited
   cutoff: {
     maxValue: 7500,     // in hertz
     attack: 0.1,        // in seconds
