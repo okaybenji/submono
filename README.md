@@ -4,7 +4,7 @@ a WebAudio subtractive, monophonic synthesizer
 ### create a synth
 ```
 var audioCtx = new AudioContext();
-var synth = submono.createSynth(audioCtx);
+var synth = new Monosynth(audioCtx);
 ```
 
 ### play a note
@@ -39,7 +39,7 @@ var config = {
   }
 };
 
-var synth = submono.createSynth(audioCtx, config);
+var synth = new Monosynth(audioCtx, config);
 ```
 
 ### demo
