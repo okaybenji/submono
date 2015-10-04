@@ -34,11 +34,11 @@ var Monosynth = function(audioCtx, config) {
   synth.release       = config.release      || 0.8; //in seconds
   
   //low-pass filter cutoff defaults
-  synth.cutoff          = synth.filter.frequency;
-  synth.cutoff.maxFrequency = config.cutoff.maxFrequency  || 7500; //in hertz
-  synth.cutoff.attack   = config.cutoff.attack    || 0.1; //in seconds
-  synth.cutoff.decay    = config.cutoff.decay     || 2.5; //in seconds
-  synth.cutoff.sustain  = config.cutoff.sustain   || 0.2; //out of 1
+  synth.cutoff              = synth.filter.frequency;
+  synth.cutoff.maxFrequency = config.cutoff.maxFrequency || 7500; //in hertz
+  synth.cutoff.attack       = config.cutoff.attack       || 0.1; //in seconds
+  synth.cutoff.decay        = config.cutoff.decay        || 2.5; //in seconds
+  synth.cutoff.sustain      = config.cutoff.sustain      || 0.2; //out of 1
   
   //create and connect oscillator and stereo panner
   synth.osc = audioCtx.createOscillator();
