@@ -35,7 +35,7 @@ var Monosynth = function(audioCtx, config) {
   
   //low-pass filter cutoff defaults
   synth.cutoff          = synth.filter.frequency;
-  synth.cutoff.maxValue = config.cutoff.maxValue  || 7500; //in hertz
+  synth.cutoff.maxFrequency = config.cutoff.maxFrequency  || 7500; //in hertz
   synth.cutoff.attack   = config.cutoff.attack    || 0.1; //in seconds
   synth.cutoff.decay    = config.cutoff.decay     || 2.5; //in seconds
   synth.cutoff.sustain  = config.cutoff.sustain   || 0.2; //out of 1
@@ -89,8 +89,8 @@ Monosynth.prototype.start = function startSynth() {
   var now  = this.getNow();
   this.cutoff.cancelScheduledValues(now);
   this.cutoff.linearRampToValueAtTime(this.cutoff.value, now);
-  this.cutoff.linearRampToValueAtTime(this.cutoff.maxValue, now + cAtk);
-  this.cutoff.linearRampToValueAtTime(this.cutoff.sustain * this.cutoff.maxValue, now + cAtk + cDec);
+  this.cutoff.linearRampToValueAtTime(this.cutoff.maxFrequency, now + cAtk);
+  this.cutoff.linearRampToValueAtTime(this.cutoff.sustain * this.cutoff.maxFrequency, now + cAtk + cDec);
   this.amp.gain.linearRampToValueAtTime(this.maxGain, now + atk);
   this.amp.gain.linearRampToValueAtTime(this.sustain * this.maxGain, now + atk + dec);
 };
