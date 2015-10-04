@@ -95,5 +95,5 @@ var Monosynth = function Monosynth(audioCtx, config) {
     this.amp.gain.linearRampToValueAtTime(0, now + rel);
   };
 
-  return new Synth;
+  return new Synth();
 };
