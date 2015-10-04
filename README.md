@@ -32,7 +32,7 @@ var config = {
   sustain: 1.0,         // out of 1
   release: 0.8,         // in seconds
   cutoff: {
-    maxFrequency: 7500,     // in hertz
+    maxFrequency: 7500, // in hertz
     attack: 0.1,        // in seconds
     decay: 2.5,         // in seconds
     sustain: 0.2        // 0-5; maxFrequency multiplied by this
