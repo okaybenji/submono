@@ -1,5 +1,5 @@
 # submono
-a WebAudio subtractive, monophonic synthesizer
+a Web Audio subtractive, monophonic synthesizer
 
 ### create a synth
 ```
