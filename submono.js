@@ -4,10 +4,6 @@
  *  MIT License
  */
 
-/*
- * TODO: Explore synth.cutoff.contour.
- */
-
 var Monosynth = function Monosynth(audioCtx, config) {
   var synth;
   var Synth = function Synth() {
