@@ -13,7 +13,7 @@ var synth = new Monosynth(audioCtx);
 ### Stop playing.
 `synth.stop();`
 
-### Use convenience methods to access pitch and waveform...
+### Use methods to access pitch and waveform...
 ```
 synth.pitch(440);              // in hertz
 console.log(synth.waveform()); // 'sawtooth' (or sine, triangle, square)
@@ -46,5 +46,5 @@ var config = {
 var synth = new Monosynth(audioCtx, config);
 ```
 
-### demo
-[tiles: a musical, multiplayer web toy](http://okaybenji.github.io/tiles-client/)
+### Demo
+[Tiles: a musical, multiplayer web toy](http://okaybenji.github.io/tiles-client/)
