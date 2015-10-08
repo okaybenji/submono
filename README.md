@@ -1,9 +1,5 @@
 # submono
-<<<<<<< HEAD
-A WebAudio subtractive, monophonic synthesizer. Looking for polyphony? Check out [subpoly](https://github.com/okaybenji/subpoly)!
-=======
-a Web Audio subtractive, monophonic synthesizer
->>>>>>> 0ee94a0a89a8c2eb6d302cb9311b5940fe8abff3
+A Web Audio subtractive, monophonic synthesizer. Looking for polyphony? Check out [subpoly](https://github.com/okaybenji/subpoly)!
 
 ### Create a synth.
 ```
