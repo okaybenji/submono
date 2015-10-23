@@ -88,6 +88,6 @@ var Monosynth = function Monosynth(audioCtx, config) {
 };
 
 // npm support
-if (module && module.exports) {
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
   module.exports = Monosynth;
 }
