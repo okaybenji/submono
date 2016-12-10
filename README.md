@@ -1,5 +1,5 @@
 # submono
-A Web Audio subtractive, monophonic synthesizer. Looking for polyphony? Check out [subpoly](https://okaybenji.github.io/subpoly)!
+A Web Audio subtractive, monophonic synthesizer. Looking for polyphony? Check out [subpoly](https://github.com/okaybenji/subpoly/)!
 
 ### Create a synth.
 ```
