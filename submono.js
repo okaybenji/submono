@@ -24,7 +24,7 @@ var Monosynth = function Monosynth(audioCtx, config) {
     synth.cutoff.decay        = config.cutoff.decay        || 2.5; // in seconds
     synth.cutoff.sustain      = config.cutoff.sustain      || 0.2; // out of 1
 
-    synth.amp.gain.value = 0;
+    synth.amp.gain.setValueAtTime(0, 0);
     synth.filter.type = 'lowpass';
     synth.filter.connect(synth.amp);
     synth.amp.connect(audioCtx.destination);
